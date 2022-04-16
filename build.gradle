@@ -38,6 +38,12 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.2'
 
 
+    // JPA 부분 , DB 부분
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.5'
+
+
+
 }
 
 test {
