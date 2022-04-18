@@ -4,10 +4,8 @@ package com.example.demo.jpatest.model;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 // 암시적 명명법 사용
 
@@ -26,7 +24,9 @@ public class StudentClass {
     // 사과반, 병아리반 이라고 이름을 지어보자
     private String name;
 
-
+    //하나의 반에서 여러명의 학생
+    @OneToMany(mappedBy = "studentClasss")
+    private List<Student> students;
 
 
 }
