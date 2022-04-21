@@ -1,8 +1,7 @@
 package com.example.demo.jpatest.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,6 +9,8 @@ import java.util.List;
 
 // @Table // 보통 테이블 이름을 정하기위해 쓰는 어노테이션이다
 
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "StudentEntity")
@@ -42,6 +43,7 @@ public class Student {
     // 학생들은 보통 각자 반이 지정되어있다 연관관계
 
 
+    //getter setter
 
 
 
